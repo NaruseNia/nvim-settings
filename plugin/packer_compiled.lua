@@ -302,6 +302,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plastic-nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/plastic-nvim",
+    url = "https://github.com/MomePP/plastic-nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/plenary.nvim",

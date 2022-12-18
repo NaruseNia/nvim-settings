@@ -37,7 +37,8 @@ cmp.setup({
     { name = 'nvim_lsp' },
     { name = 'nvim_lua' },
     { name = 'calc' },
-    { name = 'emoji' }
+    { name = 'emoji' },
+    { name = "crates" },
   },
   experimental = {
     ghost_text = true,

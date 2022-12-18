@@ -9,6 +9,7 @@ require('packer').startup(function(use)
   use "kvrohit/mellow.nvim"
   use "kvrohit/rasmus.nvim"
   use "Yazeed1s/minimal.nvim"
+  use "MomePP/plastic-nvim"
   use {
     "catppuccin/vim",
     as = "catppuccin"
