@@ -9,12 +9,16 @@ require("telescope").setup {
       '--column',
       '--smart-case',
       '--ignore-file',
-      '.gitignore'
+      '.gitignore',
+      '--glob',
+      '"!{**/MakeFile/*,**/CMakeFiles/*,**/lua/*}"',
     },
-  },
-  file_ignore_patterns = {
-    "node_modules",
-    ".git"
+    file_ignore_patterns = {
+      "node_modules",
+      "MakeFile",
+      "CMakeFiles",
+      ".git"
+    },
   },
   -- extensions = {
   --   fzf = {

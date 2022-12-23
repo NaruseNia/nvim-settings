@@ -1,5 +1,6 @@
 local config_util = require("libs._set_config")
 local load_conf = config_util.load_conf
+local load_confs = config_util.load_confs
 
 require('packer').startup(function(use)
   -- Basis
@@ -49,6 +50,10 @@ require('packer').startup(function(use)
   use "rust-lang/rust.vim"
   use "qnighy/lalrpop.vim"
   use "markwoodhall/vim-nuget"
+  use {
+    "weilbith/nvim-code-action-menu",
+    cmd = "CodeActionMenu"
+  }
 
   -- Complete
   use "hrsh7th/nvim-cmp"
@@ -84,10 +89,23 @@ require('packer').startup(function(use)
   use "anuvyklack/windows.nvim"
   use "ethanjwright/toolwindow.nvim"
   use "j-hui/fidget.nvim"
+  use "skywind3000/vim-quickui"
+  use "notomo/piemenu.nvim"
   use {
     "utilyre/barbecue.nvim",
     after = "nvim-web-devicons", -- NOTICE: keep this if you're using NvChad
   }
+  use({
+    "ghillb/cybu.nvim",
+    branch = "main", -- timely updates
+    config = function()
+      local ok, cybu = pcall(require, "cybu")
+      if not ok then
+        return
+      end
+      cybu.setup()
+    end,
+  })
 
   -- Utility
   use "windwp/nvim-ts-autotag"
@@ -97,12 +115,13 @@ require('packer').startup(function(use)
   use "kevinhwang91/rnvimr"
   use "numToStr/Comment.nvim"
   use "folke/which-key.nvim"
+  use "kazhala/close-buffers.nvim"
   use {
     "nvim-tree/nvim-tree.lua",
     tag = "nightly"
   }
   use {
-    'phaazon/hop.nvim',
+   'phaazon/hop.nvim',
     branch = 'v2', -- optional but strongly recommended
     config = function()
       -- you can configure Hop the way you like here; see :h hop-config
@@ -116,18 +135,31 @@ require('packer').startup(function(use)
     },
   })
 
+  -- Extension
+  use {
+    "nvim-telescope/telescope-frecency.nvim",
+    config = function()
+      require "telescope".load_extension("frecency")
+    end,
+    requires = { "kkharji/sqlite.lua" }
+  }
+
   -- Fun
   use "seandewar/nvimesweeper"
 end)
 
-load_conf("tree-sitter")
+load_confs({
+  -- Pre-require
+  "tree-sitter",
 
-load_conf("lspconfig")
-load_conf("lsp-format")
-load_conf("lspkind")
-load_conf("mason")
-load_conf("mason-lspconfig")
-load_conf("cmp")
+  -- LSP
+  "lspconfig",
+  "lsp-format",
+  "lspkind",
+  "mason",
+  "mason-lspconfig",
+  "cmp",
+})
 
 load_conf("lualine")
 load_conf("barbar")

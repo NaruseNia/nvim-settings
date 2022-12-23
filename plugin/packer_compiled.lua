@@ -111,6 +111,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/vim"
   },
+  ["close-buffers.nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/close-buffers.nvim",
+    url = "https://github.com/kazhala/close-buffers.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -156,6 +161,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/crates.nvim",
     url = "https://github.com/saecki/crates.nvim"
+  },
+  ["cybu.nvim"] = {
+    config = { "\27LJ\2\nH\0\0\4\0\4\0\n6\0\0\0006\2\1\0'\3\2\0B\0\3\3\14\0\0\0X\2\1€K\0\1\0009\2\3\1B\2\1\1K\0\1\0\nsetup\tcybu\frequire\npcall\0" },
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/cybu.nvim",
+    url = "https://github.com/ghillb/cybu.nvim"
   },
   ["deoplete.nvim"] = {
     loaded = true,
@@ -263,6 +274,14 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-code-action-menu"] = {
+    commands = { "CodeActionMenu" },
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/opt/nvim-code-action-menu",
+    url = "https://github.com/weilbith/nvim-code-action-menu"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -323,6 +342,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["piemenu.nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/piemenu.nvim",
+    url = "https://github.com/notomo/piemenu.nvim"
+  },
   ["plastic-nvim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/plastic-nvim",
@@ -353,6 +377,17 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
+  ["sqlite.lua"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/sqlite.lua",
+    url = "https://github.com/kkharji/sqlite.lua"
+  },
+  ["telescope-frecency.nvim"] = {
+    config = { "\27LJ\2\nM\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\rfrecency\19load_extension\14telescope\frequire\0" },
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/telescope-frecency.nvim",
+    url = "https://github.com/nvim-telescope/telescope-frecency.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -372,6 +407,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-nuget",
     url = "https://github.com/markwoodhall/vim-nuget"
+  },
+  ["vim-quickui"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-quickui",
+    url = "https://github.com/skywind3000/vim-quickui"
   },
   ["vim-vsnip"] = {
     loaded = true,
@@ -401,19 +441,39 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: crates.nvim
-time([[Config for crates.nvim]], true)
-try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
-time([[Config for crates.nvim]], false)
+-- Config for: telescope-frecency.nvim
+time([[Config for telescope-frecency.nvim]], true)
+try_loadstring("\27LJ\2\nM\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\rfrecency\19load_extension\14telescope\frequire\0", "config", "telescope-frecency.nvim")
+time([[Config for telescope-frecency.nvim]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
+-- Config for: crates.nvim
+time([[Config for crates.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
+time([[Config for crates.nvim]], false)
+-- Config for: cybu.nvim
+time([[Config for cybu.nvim]], true)
+try_loadstring("\27LJ\2\nH\0\0\4\0\4\0\n6\0\0\0006\2\1\0'\3\2\0B\0\3\3\14\0\0\0X\2\1€K\0\1\0009\2\3\1B\2\1\1K\0\1\0\nsetup\tcybu\frequire\npcall\0", "config", "cybu.nvim")
+time([[Config for cybu.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-web-devicons ]]
 vim.cmd [[ packadd barbecue.nvim ]]
 time([[Sequenced loading]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'CodeActionMenu', function(cmdargs)
+          require('packer.load')({'nvim-code-action-menu'}, { cmd = 'CodeActionMenu', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'nvim-code-action-menu'}, { cmd = 'CodeActionMenu' }, _G.packer_plugins)
+          return vim.fn.getcompletion('CodeActionMenu ', 'cmdline')
+      end})
+time([[Defining lazy-load commands]], false)
+
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
