@@ -151,10 +151,26 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/cmp-treesitter",
     url = "https://github.com/ray-x/cmp-treesitter"
   },
+  ["crates.nvim"] = {
+    config = { "\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0" },
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/crates.nvim",
+    url = "https://github.com/saecki/crates.nvim"
+  },
+  ["deoplete.nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
+    url = "https://github.com/Shougo/deoplete.nvim"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
   },
   ["guihua.lua"] = {
     loaded = true,
@@ -171,6 +187,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lalrpop.vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/lalrpop.vim",
+    url = "https://github.com/qnighy/lalrpop.vim"
   },
   ["lsp-format.nvim"] = {
     loaded = true,
@@ -327,6 +348,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/rnvimr",
     url = "https://github.com/kevinhwang91/rnvimr"
   },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -342,10 +368,20 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
+  ["vim-nuget"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-nuget",
+    url = "https://github.com/markwoodhall/vim-nuget"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["webapi-vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/webapi-vim",
+    url = "https://github.com/mattn/webapi-vim"
   },
   ["which-key.nvim"] = {
     loaded = true,
@@ -365,6 +401,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: crates.nvim
+time([[Config for crates.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
+time([[Config for crates.nvim]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")

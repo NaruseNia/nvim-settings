@@ -17,6 +17,9 @@ require('packer').startup(function(use)
 
   -- Pre-require
   use "nvim-lua/plenary.nvim"
+  use "mattn/webapi-vim"
+  use "junegunn/fzf.vim"
+  use "Shougo/deoplete.nvim"
   use "nvim-lua/popup.nvim"
   use "MunifTanjim/nui.nvim"
   use "nvim-tree/nvim-web-devicons"
@@ -43,6 +46,9 @@ require('packer').startup(function(use)
   use "lukas-reineke/lsp-format.nvim"
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
+  use "rust-lang/rust.vim"
+  use "qnighy/lalrpop.vim"
+  use "markwoodhall/vim-nuget"
 
   -- Complete
   use "hrsh7th/nvim-cmp"
@@ -56,6 +62,15 @@ require('packer').startup(function(use)
   use "hrsh7th/cmp-calc"
   use "hrsh7th/cmp-emoji"
   use "ray-x/cmp-treesitter"
+
+  use {
+    'saecki/crates.nvim',
+    tag = 'v0.3.0',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('crates').setup()
+    end,
+  }
 
   -- Visual
   use "nvim-lualine/lualine.nvim"
