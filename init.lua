@@ -14,8 +14,10 @@ vim.opt.cmdheight = 0
 vim.opt.cursorline = true
 
 vim.opt.number = true
+vim.opt.relativenumber = true
 
 vim.g.mellow_italic_comments = false
 vim.g.rasmus_italic_comments = false
-vim.cmd "colorscheme rasmus"
+vim.g.ayucolor = "dark"
+vim.cmd "colorscheme jellybeans-nvim"
 

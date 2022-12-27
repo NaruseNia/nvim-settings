@@ -23,6 +23,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<A-l>", apply_file, def_opt)
 vim.keymap.set("n", "<A-s>", packer_sync, def_opt)
 
+vim.keymap.set({"n", "t"}, "<esc><esc>", "<cmd>noh<cr>", def_opt)
+vim.keymap.set("n", "hh", "<cmd>noh<cr>", def_opt)
+
 vim.keymap.set("n", "<leader>ff", telescope_builtin.find_files, def_opt)
 vim.keymap.set("n", "<leader>fc", "<cmd>lua require('telescope.builtin').find_files( { cwd = vim.fn.expand('%:p:h') })<cr>", def_opt)
 vim.keymap.set("n", "<leader>fe", "<cmd>lua require('telescope').extensions.frecency.frecency()<cr>", def_opt)
@@ -40,6 +43,8 @@ vim.keymap.set('t', '<A-v>', '<C-\\><C-n><cmd>lua require("FTerm").exit()<cr>')
 vim.keymap.set("n", "<leader>sf", ":HopChar1<cr>", def_opt)
 vim.keymap.set("n", "<leader>ss", ":HopChar2<cr>", def_opt)
 vim.keymap.set("n", "<leader>sl", ":HopLineStart<cr>", def_opt)
+vim.keymap.set("n", "<C-j>", "<Plug>(edgemotion-j)", def_opt)
+vim.keymap.set("n", "<C-k>", "<Plug>(edgemotion-k)", def_opt)
 
 vim.keymap.set("n", "<leader>fr", format, def_opt)
 

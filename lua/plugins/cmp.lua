@@ -1,6 +1,6 @@
 local cmp = require("cmp")
 local lspkind = require("lspkind")
-local icons = require("nvim-nonicons")
+
 cmp.setup({
   snippet = {
     expand = function(args)
@@ -44,9 +44,8 @@ cmp.setup({
     ghost_text = true,
   },
   formatting = {
-    format = lspkind.cmp_format({
-      mode = "symbol_text",
-    })
+    fields =  {"kind", "abbr", "menu"},
+    format = lspkind.cmp_format({mode = "symbol"})
   }
 })
 
@@ -70,3 +69,4 @@ cmp.setup.cmdline(':', {
     }
   })
 })
+

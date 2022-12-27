@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["ayu-vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/ayu-vim",
+    url = "https://github.com/ayu-theme/ayu-vim"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
+  ["fzf-preview.vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/fzf-preview.vim",
+    url = "https://github.com/yuki-yano/fzf-preview.vim"
+  },
   ["fzf.vim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/fzf.vim",
@@ -199,6 +209,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["jellybeans-nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/jellybeans-nvim",
+    url = "https://github.com/metalelf0/jellybeans-nvim"
+  },
   ["lalrpop.vim"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/lalrpop.vim",
@@ -218,6 +233,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -253,6 +273,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/navigator.lua",
     url = "https://github.com/ray-x/navigator.lua"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
   },
   ["nlua.nvim"] = {
     loaded = true,
@@ -311,6 +336,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/nvim-toggleterm.lua",
     url = "https://github.com/akinsho/nvim-toggleterm.lua"
+  },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -382,6 +412,11 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/sqlite.lua",
     url = "https://github.com/kkharji/sqlite.lua"
   },
+  ["targets.vim"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/targets.vim",
+    url = "https://github.com/wellle/targets.vim"
+  },
   ["telescope-frecency.nvim"] = {
     config = { "\27LJ\2\nM\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\rfrecency\19load_extension\14telescope\frequire\0" },
     loaded = true,
@@ -403,6 +438,16 @@ _G.packer_plugins = {
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
+  ["vim-edgemotion"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-edgemotion",
+    url = "https://github.com/haya14busa/vim-edgemotion"
+  },
+  ["vim-highlightedyank"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-highlightedyank",
+    url = "https://github.com/machakann/vim-highlightedyank"
+  },
   ["vim-nuget"] = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-nuget",
@@ -412,6 +457,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-quickui",
     url = "https://github.com/skywind3000/vim-quickui"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
   },
   ["vim-vsnip"] = {
     loaded = true,
@@ -437,10 +492,19 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/notsh/.local/share/nvim/site/pack/packer/start/windows.nvim",
     url = "https://github.com/anuvyklack/windows.nvim"
+  },
+  winresizer = {
+    loaded = true,
+    path = "/home/notsh/.local/share/nvim/site/pack/packer/start/winresizer",
+    url = "https://github.com/simeji/winresizer"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: crates.nvim
+time([[Config for crates.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
+time([[Config for crates.nvim]], false)
 -- Config for: telescope-frecency.nvim
 time([[Config for telescope-frecency.nvim]], true)
 try_loadstring("\27LJ\2\nM\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\rfrecency\19load_extension\14telescope\frequire\0", "config", "telescope-frecency.nvim")
@@ -449,10 +513,6 @@ time([[Config for telescope-frecency.nvim]], false)
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
--- Config for: crates.nvim
-time([[Config for crates.nvim]], true)
-try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
-time([[Config for crates.nvim]], false)
 -- Config for: cybu.nvim
 time([[Config for cybu.nvim]], true)
 try_loadstring("\27LJ\2\nH\0\0\4\0\4\0\n6\0\0\0006\2\1\0'\3\2\0B\0\3\3\14\0\0\0X\2\1€K\0\1\0009\2\3\1B\2\1\1K\0\1\0\nsetup\tcybu\frequire\npcall\0", "config", "cybu.nvim")

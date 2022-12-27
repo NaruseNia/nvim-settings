@@ -11,6 +11,8 @@ require('packer').startup(function(use)
   use "kvrohit/rasmus.nvim"
   use "Yazeed1s/minimal.nvim"
   use "MomePP/plastic-nvim"
+  use "ayu-theme/ayu-vim"
+  use "metalelf0/jellybeans-nvim"
   use {
     "catppuccin/vim",
     as = "catppuccin"
@@ -30,6 +32,7 @@ require('packer').startup(function(use)
   use "anuvyklack/animation.nvim"
   use "akinsho/nvim-toggleterm.lua"
   use "folke/trouble.nvim"
+  use "rktjmp/lush.nvim"
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
@@ -50,6 +53,7 @@ require('packer').startup(function(use)
   use "rust-lang/rust.vim"
   use "qnighy/lalrpop.vim"
   use "markwoodhall/vim-nuget"
+  use "folke/neodev.nvim"
   use {
     "weilbith/nvim-code-action-menu",
     cmd = "CodeActionMenu"
@@ -91,6 +95,7 @@ require('packer').startup(function(use)
   use "j-hui/fidget.nvim"
   use "skywind3000/vim-quickui"
   use "notomo/piemenu.nvim"
+  use "xiyaowong/nvim-transparent"
   use {
     "utilyre/barbecue.nvim",
     after = "nvim-web-devicons", -- NOTICE: keep this if you're using NvChad
@@ -116,8 +121,15 @@ require('packer').startup(function(use)
   use "numToStr/Comment.nvim"
   use "folke/which-key.nvim"
   use "kazhala/close-buffers.nvim"
+  use "mg979/vim-visual-multi"
+  use "yuki-yano/fzf-preview.vim"
+  use "tpope/vim-surround"
+  use "simeji/winresizer"
+  use "wellle/targets.vim"
+  use "haya14busa/vim-edgemotion"
+  use "machakann/vim-highlightedyank"
   use {
-    "nvim-tree/nvim-tree.lua",
+    "nvim-tree/nvim-tree.lua", 
     tag = "nightly"
   }
   use {
@@ -159,18 +171,21 @@ load_confs({
   "mason",
   "mason-lspconfig",
   "cmp",
+
+  -- Visual
+  "lualine",
+  "barbar",
+  "noice",
+  "indent",
+
+  -- Utility
+  "fterm",
+  "telescope",
+  "comment",
+  "nvim-tree",
 })
 
-load_conf("lualine")
-load_conf("barbar")
-load_conf("noice")
-load_conf("indent")
 require("fidget").setup()
 require("scrollbar").setup()
-
 require("autoclose").setup({})
-load_conf("fterm")
-load_conf("telescope")
-load_conf("comment")
-load_conf("nvim-tree")
 require("which-key").setup()
