@@ -19,5 +19,5 @@ vim.opt.relativenumber = true
 vim.g.mellow_italic_comments = false
 vim.g.rasmus_italic_comments = false
 vim.g.ayucolor = "dark"
-vim.cmd "colorscheme jellybeans-nvim"
+vim.cmd "colorscheme rasmus"
 
