@@ -9,7 +9,7 @@ require("lspkind").init({
     Variable = "",
     Class = "",
     Interface = "",
-    Module = "",
+    Module = "󰏖",
     Property = "",
     Unit = "塞",
     Value = "",
